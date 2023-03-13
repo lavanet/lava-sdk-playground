@@ -14,11 +14,12 @@ const { LavaSDK } = require("lava-sdk");
 async function main() {
   const sdk = await new LavaSDK({
     privateKey: "<private key from Cosmos Hub staked client>",
-    chainID: "chainID of the network you want to query",
-    jsonRPC: "jsonrpc method which will be used [tendermintrpc, jsonrpc, rest]", // optional
+    chainID: "<ChainID of the network you want to query>",
+    jsonRPC:
+      "<method to be used for JSON-RPC calls [tendermintrpc, jsonrpc, rest]>", // optional
     pairingListConfig:
-      "<pairing list config, if empty the public testent will be used>", // optional,
-    geolocation: "<geolocation of providers>", //optional
+      "<configuration for the pairing list of providers to use, if empty the public testnet will be used>", // optional,
+    geolocation: "<geolocation of the providers to use>", //optional
   });
 
   // Send relay request for a jsonrpc/tendermintrpc method

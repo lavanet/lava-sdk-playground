@@ -7,7 +7,7 @@ const { LavaSDK } = require("lava-sdk");
 async function main() {
   // Initialize Lava SDK
   const eth = await new LavaSDK({
-    privateKey: "<private key from Cosmos Hub staked client>",
+    privateKey: "<private key from ETH staked client>",
     chainID: "ETH1",
   });
 
