@@ -16,7 +16,8 @@
     "url": "https://github.com/lavanet/lava-sdk-playground/issues"
   },
   "dependencies": {
-    "lava-sdk": "github:lavanet/lava-sdk#main"
+    "lava-sdk": "github:lavanet/lava-sdk#main",
+    "lava-sdk-providers": "github:lavanet/lava-sdk-providers#90880d49fee3231aa76af78845282c4697625e3b"
   },
   "homepage": "https://github.com/lavanet/lava-sdk-playground#readme"
 }
