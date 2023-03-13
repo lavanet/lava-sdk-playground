@@ -1,0 +1,22 @@
+{
+  "name": "lava-sdk-playground",
+  "version": "1.0.0",
+  "description": "This repository is a playground for the Lava SDK. It provides a simple Node.js application with Lava SDK imported",
+  "main": "src/playground.js",
+  "scripts": {
+    "playground": "node ./src/playground.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lavanet/lava-sdk-playground.git"
+  },
+  "author": "Lava Protocol Inc",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/lavanet/lava-sdk-playground/issues"
+  },
+  "dependencies": {
+    "lava-sdk": "github:lavanet/lava-sdk#main"
+  },
+  "homepage": "https://github.com/lavanet/lava-sdk-playground#readme"
+}
