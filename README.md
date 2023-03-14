@@ -12,6 +12,11 @@
 
 This is a simple node.js application that allows you to test the functionality of the lava-sdk library. The application is pre-configured with the latest version of the [lava-sdk](https://github.com/lavanet/lava-sdk), and you can modify the sample code provided to test different requests against the Lava network.
 
+## DEMO
+
+
+![lava-sdk-playground](https://user-images.githubusercontent.com/42786413/225039304-59f20939-cc8d-420a-bf6c-21041e212350.gif)
+
 <!-- Prerequisites -->
 
 ## Prerequisites
