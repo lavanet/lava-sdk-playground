@@ -17,7 +17,7 @@
   },
   "dependencies": {
     "lava-sdk": "github:lavanet/lava-sdk#main",
-    "lava-sdk-providers": "github:lavanet/lava-sdk-providers#90880d49fee3231aa76af78845282c4697625e3b"
+    "lava-sdk-providers": "github:lavanet/lava-sdk-providers#f131fe449c93b80febaa4c56f9249ba8bae7a4ad"
   },
   "homepage": "https://github.com/lavanet/lava-sdk-playground#readme"
 }
