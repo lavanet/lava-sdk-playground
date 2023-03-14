@@ -1,4 +1,5 @@
 const { LavaSDK } = require("lava-sdk");
+require("dotenv").config();
 
 // This example demonstrates how to use Lava SDK to query CosmosHub network
 // using tendermintRPC to fetch latest and parse latest block
@@ -7,7 +8,7 @@ const { LavaSDK } = require("lava-sdk");
 async function main() {
   // Initialize Lava SDK
   const cosmosHub = await new LavaSDK({
-    privateKey: "<private key from Cosmos Hub staked client>",
+    privateKey: process.env.PRIVATE_KEY,
     chainID: "COS5",
   });
 

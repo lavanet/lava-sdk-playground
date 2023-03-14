@@ -1,4 +1,5 @@
 const { LavaSDK } = require("lava-sdk");
+require("dotenv").config();
 
 // This example demonstrates how to use Lava SDK to query ETH network
 // using jsonrpc to fetch latest and parse latest block
@@ -7,7 +8,7 @@ const { LavaSDK } = require("lava-sdk");
 async function main() {
   // Initialize Lava SDK
   const eth = await new LavaSDK({
-    privateKey: "<private key from ETH staked client>",
+    privateKey: process.env.PRIVATE_KEY,
     chainID: "ETH1",
   });
 

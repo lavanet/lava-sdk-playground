@@ -1,4 +1,5 @@
 const { LavaEthersProvider } = require("lava-sdk-providers");
+require("dotenv").config();
 
 // This example demonstrates how to use Lava Ethers provider to query ETH network
 // using ethers.js library to fetch latest and parse latest block
@@ -7,20 +8,14 @@ const { LavaEthersProvider } = require("lava-sdk-providers");
 async function main() {
   // Initialize Lava SDK
   const ethProvider = await new LavaEthersProvider({
-    privKey: "<private key from ETH staked client>",
+    privKey: process.env.PRIVATE_KEY,
     chainID: "ETH1",
   });
 
   // Send relay request to fetch latest block number
   const blockNumberResponse = await ethProvider.getBlockNumber();
 
-  // Parse and extract response
-  const parsedResponse = JSON.parse(blockNumberResponse);
-
-  // Extract latest block number
-  const latestBlockNumber = parsedResponse.result;
-
-  console.log(latestBlockNumber);
+  console.log(blockNumberResponse);
 }
 
 (async () => {
