@@ -1,4 +1,5 @@
 const { LavaSDK } = require("lava-sdk");
+require("dotenv").config();
 
 // This example demonstrates how to use Lava SDK to query Lava network
 // using rest api to fetch latest and parse latest block
@@ -7,7 +8,7 @@ const { LavaSDK } = require("lava-sdk");
 async function main() {
   // Initialize Lava SDK
   const lava = await new LavaSDK({
-    privateKey: "<private key from LAV1 staked client>",
+    privateKey: process.env.PRIVATE_KEY,
     chainID: "LAV1",
     rpcInterface: "rest",
   });
