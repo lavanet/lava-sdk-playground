@@ -1,4 +1,4 @@
-const { LavaSDK } = require("lava-sdk");
+const { LavaSDK } = require("@lavanet/lava-sdk");
 
 /**
  * This is a playground for testing LavaSDK methods.
