@@ -1,4 +1,4 @@
-const { LavaEthersProvider } = require("lava-sdk-providers");
+const { LavaEthersProvider } = require("@lavanet/lava-sdk-providers");
 require("dotenv").config();
 
 // This example demonstrates how to use Lava Ethers provider to query ETH network

@@ -1,4 +1,4 @@
-const { LavaSDK } = require("lava-sdk");
+const { LavaSDK } = require("@lavanet/lava-sdk");
 require("dotenv").config();
 
 // This example demonstrates how to use Lava SDK to query CosmosHub network

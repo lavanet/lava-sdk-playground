@@ -1,14 +1,14 @@
-const { LavaSDK } = require("lava-sdk");
+const { LavaSDK } = require("@lavanet/lava-sdk");
 require("dotenv").config();
 
 // This example demonstrates how to use Lava SDK to query CosmosHub network
 // using tendermintRPC to fetch latest and parse latest block
 // To run this example, first add the private key of a staked account and then use the following command:
-// node ./src/examples/getCosmosHubLatestBlock.js
+// node ./src/examples/getCosmos10TimesWithGeolocation.js
 
 async function fetchLatestBlock(cosmosHub) {
   const startTime = Date.now();
-  
+
   // Get abci_info
   const info = await cosmosHub.sendRelay({
     method: "abci_info",
@@ -22,8 +22,10 @@ async function fetchLatestBlock(cosmosHub) {
   const latestBlockNumber = parsedInfo.last_block_height;
 
   const elapsedTime = Date.now() - startTime;
-  console.log(`Latest block number: ${latestBlockNumber} (fetched and parsed in ${elapsedTime} ms)`);
-  
+  console.log(
+    `Latest block number: ${latestBlockNumber} (fetched and parsed in ${elapsedTime} ms)`
+  );
+
   return elapsedTime;
 }
 
