@@ -16,8 +16,8 @@
     "url": "https://github.com/lavanet/lava-sdk-playground/issues"
   },
   "dependencies": {
-    "@lavanet/lava-sdk": "0.8.2",
-    "@lavanet/lava-sdk-providers": "0.8.3",
+    "@lavanet/lava-sdk": "0.9.0",
+    "@lavanet/lava-sdk-providers": "0.9.0",
     "dotenv": "^16.0.3",
     "ethers": "^6.2.3"
   },
